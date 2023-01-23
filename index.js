@@ -12,8 +12,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Defining the '/' route.
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+app.post('/', (req, res) => {
+    res.json({
+        message: "Hello World!"
+    });
 });
 
 app.listen(port, () => {
