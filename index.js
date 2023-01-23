@@ -1,6 +1,6 @@
 // A express server, which will handle api requests coming in and respond back with a json object, it will use body parser as well as cors.
 
-// Install and require express (npm install express), body parser (npm install body-parser) and cors (npm install cors)
+// Install and require express (npm install express), body parser (npm install body-parser) and cors (npm install cors --save)
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
