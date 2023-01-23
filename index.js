@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Telling the express app to use body parser and cors.
 app.use(bodyParser.json());
