@@ -11,6 +11,11 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
+// Defining the '/' route.
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+
+app.listen(port, () => {
+    console.log('Example app listening')
+})
