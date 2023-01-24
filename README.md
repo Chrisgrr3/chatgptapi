@@ -1,3 +1,7 @@
+# ChatGPT Code Assistant Application
+
+This project allows you to connect with ChatGPT via an Express Web Server. You can ask any coding question you can think of.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
