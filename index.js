@@ -25,10 +25,13 @@ app.use(cors());
 
 // Defining the '/' route.
 app.post('/', async(req, res) => {
+    // Destructuring message from request
+    const { message } = req.body;
     const response = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: "Say this is a test",
-        max_tokens: 7,
+        // Passing the message from the request to OpenAIApi
+        prompt: message,
+        max_tokens: 100,
         temperature: 0,
     });
     console.log(response.data);
