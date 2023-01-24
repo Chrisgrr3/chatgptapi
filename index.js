@@ -34,7 +34,7 @@ app.post('/', async(req, res) => {
         // Here, we can take advantage of prompt engineering
         // from the backend.
         prompt: `Answer by providing an explanation of the code.${message}?`, // We insert a question mark just in case, so that ChatGPT doesn't do it for us.
-        max_tokens: , // Don't overdo this and use too much credit.
+        max_tokens: 4000, // Don't overdo this and use too much credit.
         temperature: 0,
     });
     console.log(response.data);
