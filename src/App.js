@@ -35,7 +35,7 @@ function App() {
           <br/>
           <button type='submit'>Submit</button>
       </form>
-      {response && <div><b>Steve: </b> {response}</div>}
+      {response && <div><b>Assistant: </b> {response}</div>}
     </div>
   );
 }
