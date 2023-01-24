@@ -30,8 +30,11 @@ app.post('/', async(req, res) => {
     const response = await openai.createCompletion({
         model: "text-davinci-003",
         // Passing the message from the request to OpenAIApi
-        prompt: message,
-        max_tokens: 100,
+        // prompt: message,
+        // Here, we can take advantage of prompt engineering
+        // from the backend.
+        prompt: `Answer by providing an explanation of the code.${message}?`, // We insert a question mark just in case, so that ChatGPT doesn't do it for us.
+        max_tokens: , // Don't overdo this and use too much credit.
         temperature: 0,
     });
     console.log(response.data);

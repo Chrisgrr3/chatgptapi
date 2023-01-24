@@ -25,14 +25,17 @@ function App() {
 
   return (
     <div className='App'>
+    <h1>Chris' Code Assistant</h1>
       <form onSubmit={handleSubmit}>
         <textarea
           value={message}
+          placeholder="Ask Steve anything"
           onChange={(e) => setMessage(e.target.value)}>
           </textarea>
+          <br/>
           <button type='submit'>Submit</button>
       </form>
-      <div>{response}</div>
+      {response && <div><b>Steve: </b> {response}</div>}
     </div>
   );
 }
